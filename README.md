@@ -34,22 +34,37 @@
 - [ ] **Mineral Vault I (MNRL)** - *Peg: Mineral Basket*
 
 ### B. Traditional Commodities (Futures/Spot)
-*Target: Liquid commodities with >6 years of history*
-- [ ] *Pending Research: Energy (Crude, Nat Gas)*
-- [ ] *Pending Research: Industrial Metals (Copper, Aluminum)*
+*Selection Criteria: High liquidity & >10 years of historical data availability*
+**Energy**
+- [ ] **Crude Oil WTI** (Ticker: CL) - *Global benchmark, high volatility*
+- [ ] **Crude Oil Brent** (Ticker: B) - *European benchmark.*
+- [ ] **Natural Gas** (Ticker: NG) - *Highly weather-dependent.*
+- [ ] **Heating Oil** (Ticker: HO) - *Seasonal demand driver.*
+- [ ] **RBOB Gasoline** (Ticker: RB) - *Consumer demand proxy.*
+
+**Metals**
+- [ ] **Gold** (Ticker: GC) - *Inflation hedge*
+- [ ] **Silver** (Ticker: SI) - *Industrial + precious.*
+- [ ] **Copper** (Ticker: HG) - *Key economic indicator*
+- [ ] **Platinum** (Ticker: PL) - *Auto demand*
+
+**Agriculture**
+- [ ] **Corn** (Ticker: ZC) - *Biofuel & feed demand*
+- [ ] **Soybeans** (Ticker: ZS) - *Global trade (China/US)
+- [ ] **Wheat** (Ticker: ZW) - *Geopolitical sensitivity.*
+- [ ] **Coffee** (Ticker: KC) - *Soft commodity, weather sensitive.*
 
 ---
 
 ## 2. Data Scope (Variables to Collect)
-*Goal: Identify predictive features for the AI model.*
+*Mapping Indicia's Crypto Framework to Commodities*
 
-| Data Type | Description | Potential Source | Status |
+| Indicia Category | Commodity Equivalent | Specific Variables | Potential Source |
 | :--- | :--- | :--- | :--- |
-| **Market Data** | OHLCV, Order Book Depth | CoinGecko, Refinitiv | ⏳ Pending |
-| **On-Chain Data**| Mint/Burn volume, Holder distribution | Etherscan, PolygonScan | ⏳ Pending |
-| **Fundamental** | Inventory levels, Crop reports, Fed rates | USDA, EIA, Fred | ⏳ Pending |
-| **Alternative** | Weather data, Satellite imagery | OpenWeatherMap | ⏳ Pending |
-
+| **Market Data** | Futures Market | Open, High, Low, Close (OHLC), Volume, **Open Interest**, **Term Structure** (Contango/Backwardation). | CME, Yahoo Fin |
+| **Network Usage** | Physical Supply/Demand | **Inventory Levels** (e.g., Cushing Oil Stocks), Import/Export data, Refinery utilization rates. | EIA, USDA |
+| **Blockchain Data** | Position Data | **Commitment of Traders (COT)** reports (shows Hedge Fund vs. Producer positioning). | CFTC.gov |
+| **News/Social** | Macro/Event Data | Fed Rate decisions, OPEC+ meeting minutes, Extreme weather alerts (NOAA). | Fed, Refinitiv |
 ---
 
 ## 3. Data Landscape (Vendor Analysis)
