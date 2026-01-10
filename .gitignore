@@ -1,0 +1,13 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Data (Don't commit large datasets to GitHub)
+data/*.csv
+data/*.json
+
+# IDEs
+.vscode/
+.idea/
